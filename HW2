@@ -10,7 +10,7 @@ if ( max < numberB )
         max = numberB;
     
     }
-    else if (max < numberC)
+if (max < numberC)
     {
         max =numberC;
     }
