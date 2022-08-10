@@ -1,0 +1,11 @@
+Console.WriteLine ("Введите число а");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int result = (numberA % 2);
+ if (result == 0)
+  {
+    Console.WriteLine(numberA + " четное число");
+  }
+  else 
+  {
+    Console.WriteLine(numberA + " не четное число");
+  }
