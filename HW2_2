@@ -1,0 +1,12 @@
+Console.WriteLine ("Введите число:");
+string numberA = (Console.ReadLine());
+int LengA = numberA.Length;
+if (LengA >= 3)
+{
+ Console.WriteLine(numberA.ToString()[2]);
+ 
+}
+else 
+ {
+    Console.WriteLine("Третий цифры нет");
+ }
