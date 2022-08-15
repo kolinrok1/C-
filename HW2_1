@@ -1,0 +1,4 @@
+Console.WriteLine ("Введите трехзначное число");
+int numberA = Convert.ToInt32(Console.ReadLine());
+ int result3 = (numberA -((numberA / 100)*100) - (numberA % 10)) / 10;
+ Console.WriteLine (result3);
