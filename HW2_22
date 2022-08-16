@@ -1,0 +1,27 @@
+int[] MassA ( int LengMass , int numbMass)
+{
+   int index = 0;
+   int[] array = new int [LengMass];
+   while (index < numbMass)
+   {
+      array[index] = numbMass %10;
+      numbMass = numbMass /10;
+      index++;
+   }
+   return array;
+}
+
+
+Console.WriteLine ("Введите число:");
+string numberA = (Console.ReadLine());
+int LengA = numberA.Length;
+int numberB = Convert.ToInt32(numberA);
+if (LengA >= 3)
+{
+ int[] newarray=(MassA (LengA, numberB));
+ Console.WriteLine (newarray[LengA-3]);
+ }
+else 
+ {
+    Console.WriteLine("Третий цифры нет");
+ }
