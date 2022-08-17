@@ -1,0 +1,29 @@
+int SrtInt (int xs)
+{
+    return xs*xs;
+}
+
+Console.WriteLine("Введите координаты точки А : ");
+Console.Write("X1: ");
+int x1 =Convert.ToInt32(Console.ReadLine());
+Console.Write("Y1: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Z1: ");
+int z1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите координаты точки В : ");
+Console.Write("X2: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Y2: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Z2: ");
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+int xresutl= SrtInt(x1-x2);
+Console.WriteLine (xresutl);
+int yresult= SrtInt(y1-y2);
+Console.WriteLine (yresult);
+int zresult= SrtInt(z1-z2);
+Console.WriteLine (zresult);
+
+Console.WriteLine (Math.Sqrt(xresutl+yresult+zresult));
