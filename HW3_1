@@ -1,0 +1,16 @@
+Console.Write("Введите пятизначное число: ");
+string numb = Console.ReadLine();
+char n0 = numb.ToString()[0];
+char n1 = numb.ToString()[1];
+char n3 = numb.ToString()[3];
+char n4 = numb.ToString()[4];
+if (n0==n4  && n1==n3)
+{
+    Console.WriteLine("Число является палидромом");
+}
+else
+{
+    Console.WriteLine ("Число не является палидромом");
+}
+
+
