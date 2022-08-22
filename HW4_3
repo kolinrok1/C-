@@ -1,0 +1,8 @@
+Console.WriteLine ( "Введите длунну массива:");
+int a = Convert.ToInt32(Console.ReadLine());
+int []array = new int [a];
+for (int i=0; i<a; i++)
+{
+    array[i]= new Random().Next(1,100);
+    Console.Write(" " + array[i]);
+}
