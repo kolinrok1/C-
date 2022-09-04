@@ -1,0 +1,52 @@
+int ReadIn (string message)
+{
+    Console.WriteLine(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+void FillArray (int[,]arrafirst)
+{
+    for (int i=0; i<arrafirst.GetLength(0); i++)
+    {
+          for (int j=0; j< arrafirst.GetLength(1); j++)
+        {
+            arrafirst[i,j]= new Random().Next(1,10);
+        }
+    }
+}
+
+void PrintArray (int[,]array)
+{
+    for (int i=0; i<array.GetLength(0); i++)
+    {
+        for (int j=0; j< array.GetLength(1); j++)
+        {
+            Console.Write(array[i,j] + " "); 
+        }
+        Console.WriteLine();
+    }
+}
+
+int row = ReadIn("Введите количесво строк");
+int col = ReadIn("Введите количество столбцов");
+int [,] arrafirst = new int [row,col];
+int [,] arrasekond = new int [row,col];
+FillArray(arrafirst);
+PrintArray(arrafirst);
+Console.WriteLine();
+FillArray(arrasekond);
+PrintArray(arrasekond);
+int[,]arrayMult= new int [row,col];
+
+for (int i=0; i<arrafirst.GetLength(0); i++)
+    {
+          for (int j=0; j< arrafirst.GetLength(1); j++)
+        {
+            for (int k=0; k<arrasekond.GetLength(1); ++k)
+            {
+                arrayMult[i,j] += arrafirst[i,k]*arrasekond[k,j];
+            }
+        }
+    }
+Console.WriteLine();
+PrintArray(arrayMult);
